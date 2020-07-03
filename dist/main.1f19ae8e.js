@@ -11325,30 +11325,9 @@ $button4.on("click", function () {
   localStorage.setItem("n", n);
   $number.text(n);
 });
-},{"./app1.css":"app1.css","jquery":"../node_modules/jquery/dist/jquery.js"}],"app2.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
+},{"./app1.css":"app1.css","jquery":"../node_modules/jquery/dist/jquery.js"}],"app2.js":[function(require,module,exports) {
 
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/Administrator/AppData/Roaming/npm/node_modules/parcel/src/builtins/css-loader.js"}],"app2.js":[function(require,module,exports) {
-"use strict";
-
-require("./app2.css");
-
-var _jquery = _interopRequireDefault(require("jquery"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var $tabBar = (0, _jquery.default)("#app2 .tab-bar");
-var $tabContent = (0, _jquery.default)("#app2 .tab-content");
-$tabBar.on("click", "li", function (e) {
-  var $li = (0, _jquery.default)(e.currentTarget);
-  $li.addClass("selected").siblings().removeClass("selected");
-  var index = $li.index();
-  $tabContent.children().eq(index).addClass("active").siblings().removeClass("active");
-});
-$tabBar.children().eq(0).trigger('click');
-},{"./app2.css":"app2.css","jquery":"../node_modules/jquery/dist/jquery.js"}],"app3.css":[function(require,module,exports) {
+},{}],"app3.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
