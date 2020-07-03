@@ -194,9 +194,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/Administrator/AppData/Roaming/npm/node_modules/parcel/src/builtins/css-loader.js"}],"app1.js":[function(require,module,exports) {
-
-},{}],"app2.css":[function(require,module,exports) {
+},{"_css_loader":"C:/Users/Administrator/AppData/Roaming/npm/node_modules/parcel/src/builtins/css-loader.js"}],"app1.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -11287,7 +11285,52 @@ if ( typeof noGlobal === "undefined" ) {
 return jQuery;
 } );
 
-},{"process":"C:/Users/Administrator/AppData/Roaming/npm/node_modules/parcel/node_modules/process/browser.js"}],"app2.js":[function(require,module,exports) {
+},{"process":"C:/Users/Administrator/AppData/Roaming/npm/node_modules/parcel/node_modules/process/browser.js"}],"app1.js":[function(require,module,exports) {
+"use strict";
+
+require("./app1.css");
+
+var _jquery = _interopRequireDefault(require("jquery"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var $button1 = (0, _jquery.default)("#add1");
+var $button2 = (0, _jquery.default)("#minus1");
+var $button3 = (0, _jquery.default)("#mul2");
+var $button4 = (0, _jquery.default)("#divide2");
+var $number = (0, _jquery.default)("#number");
+var n = localStorage.getItem("n");
+$number.text(n || 100);
+$button1.on("click", function () {
+  var n = parseInt($number.text());
+  n += 1;
+  localStorage.setItem("n", n);
+  $number.text(n);
+});
+$button2.on("click", function () {
+  var n = parseInt($number.text());
+  n -= 1;
+  localStorage.setItem("n", n);
+  $number.text(n);
+});
+$button3.on("click", function () {
+  var n = parseInt($number.text());
+  n *= 2;
+  localStorage.setItem("n", n);
+  $number.text(n);
+});
+$button4.on("click", function () {
+  var n = parseInt($number.text());
+  n /= 2;
+  localStorage.setItem("n", n);
+  $number.text(n);
+});
+},{"./app1.css":"app1.css","jquery":"../node_modules/jquery/dist/jquery.js"}],"app2.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/Administrator/AppData/Roaming/npm/node_modules/parcel/src/builtins/css-loader.js"}],"app2.js":[function(require,module,exports) {
 "use strict";
 
 require("./app2.css");
