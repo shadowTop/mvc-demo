@@ -11348,25 +11348,9 @@ $tabBar.on("click", "li", function (e) {
   $tabContent.children().eq(index).addClass("active").siblings().removeClass("active");
 });
 $tabBar.children().eq(0).trigger('click');
-},{"./app2.css":"app2.css","jquery":"../node_modules/jquery/dist/jquery.js"}],"app3.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
+},{"./app2.css":"app2.css","jquery":"../node_modules/jquery/dist/jquery.js"}],"app3.js":[function(require,module,exports) {
 
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/Administrator/AppData/Roaming/npm/node_modules/parcel/src/builtins/css-loader.js"}],"app3.js":[function(require,module,exports) {
-"use strict";
-
-var _jquery = _interopRequireDefault(require("jquery"));
-
-require("./app3.css");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var $square = (0, _jquery.default)('#app3 .square');
-$square.on('click', function () {
-  $square.toggleClass('active');
-});
-},{"jquery":"../node_modules/jquery/dist/jquery.js","./app3.css":"app3.css"}],"app4.css":[function(require,module,exports) {
+},{}],"app4.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
